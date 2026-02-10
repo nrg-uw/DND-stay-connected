@@ -1,3 +1,4 @@
 [submodule "open5gs"]
 	path = open5gs
 	url = git@github.com:eqfy/open5gs.git
+	branch = main

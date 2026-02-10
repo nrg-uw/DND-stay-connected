@@ -1,8 +1,8 @@
 # DND Stay Connected Project
 
-This is the central repository for the DND Stay Connected project. This repository acts as a "meta-repo," aggregating various sub-projects (like our custom `open5gs` core network fork) into a single version-controlled workspace.
+This is the central repository for the DND Stay Connected project. 
 
-## 📂 Project Structure
+## Project Structure
 
 This project uses **Git Submodules**. This means the folders you see below are actually links to other Git repositories.
 
@@ -11,7 +11,7 @@ This project uses **Git Submodules**. This means the folders you see below are a
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Prerequisites
 * **Git**: Ensure you have a recent version of Git installed.
@@ -62,14 +62,14 @@ git push origin my-branch
 ---
 
 #### Adding New Sub-Project
-1. Checkout a new branch `git checkout -b add-submodule-name`
+1. Checkout a new branch `git checkout -b add-submodule`
 2. Add the submodule:
 ```bash
-git submodule add git@github.com:YourTeam/new-repo-name.git folder-name folder-name
+git submodule add -b main <repository-url> <submodule-name>
 ```
 2. Commit and open PR:
 ```bash
-git add .gitmodules folder-name
-git commit -m "Add new-repo-name as a submodule"
+git add .gitmodules <submodule-name>
+git commit -m "Add <submodule-name> as a submodule"
 git push origin
 ```
